@@ -161,7 +161,7 @@ public final class ProductTypes {
         return value.fst;
       }
       public Prod<c, b> modify(final Function1<a, c> fn,
-                            final Prod<a, b> value) {
+                               final Prod<a, b> value) {
         return create(fn.apply(value.fst), value.snd);
       }
     };
@@ -173,7 +173,7 @@ public final class ProductTypes {
         return value.snd;
       }
       public Prod<a, c> modify(final Function1<b, c> fn,
-                            final Prod<a, b> value) {
+                               final Prod<a, b> value) {
         return create(value.fst, fn.apply(value.snd));
       }
     };
